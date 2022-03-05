@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/Idtext"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eid"
+            android:layout_marginLeft="137dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Id"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eid"
+            android:text="Employee Id: "
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Idtext"
+            android:layout_alignLeft="@+id/n"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/n"
+            android:text="Name:"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Idtext"
+            />
+
+        <TextView
+            android:id="@+id/Agetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_alignLeft="@+id/age"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Age"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Age:"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/Exptext"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Agetext"
+            android:layout_alignLeft="@+id/xp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Exp"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/xp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Agetext"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Experience:"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/Salarytext"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Exptext"
+            android:layout_alignLeft="@id/s"
+            android:layout_marginLeft="76dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Salary"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+
+        <TextView
+            android:id="@+id/s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Exptext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Salary:"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+
+<LinearLayout
+    android:layout_below="@id/Salarytext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btnEdit"/>
+
+    <Button
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/btnDelete"/>
+
+
+
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
